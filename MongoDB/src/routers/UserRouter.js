@@ -15,5 +15,8 @@ const UserControllers = require("../controllers/UserControllers");
 
 router.post("/users", UserControllers.postUser);
 router.get("/users", UserControllers.getAllUsers);
+app.get("/", (req, res) => {
+  res.send("users");
+});
 
 module.exports = router;

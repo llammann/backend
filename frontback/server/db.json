@@ -1,0 +1,27 @@
+{
+  "singers": [
+    {
+      "id": 1,
+      "name": "Nick Jonas",
+      "age": 20,
+      "img":"https://th.bing.com/th/id/OIF.3qbsZBhPzkJLxP7uquIf4Q?w=203&h=111&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+    },
+    {
+        "id": 2,
+        "name": "Shawn Mendes",
+        "age": 23,
+        "img":"https://th.bing.com/th/id/OIP.EDA4bODFebGiaOO4M14taAHaE7?w=303&h=201&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+      },
+      {
+        "id": 3,
+        "name": "Lana Del Rey",
+        "age": 26,
+        "img":"https://th.bing.com/th/id/OIP.Zz8CG_Z6jc7Tdu4OgtLS6QHaJQ?w=203&h=254&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+      },  {
+        "id": 4,
+        "name": "Dua Lipa",
+        "age": 33,
+        "img":"https://th.bing.com/th/id/OIP.kMBB-LVXxMCzPeiN_JdBKgHaEK?w=203&h=114&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+      }
+  ]
+}
