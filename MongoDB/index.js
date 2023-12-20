@@ -1,23 +1,21 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000;
+require("dotenv").config();
+require("./src/config/db");
 
 const bodyParser = require("body-parser");
-require("dotenv").config();
-require ("./src/config/db")
+const port = process.env.PORT || 3000;
 
+const UserRouter = require("./src/routers/UserRouter"); //root
 
-app.get("/", (req, res) => {
-  //   res.send(arr);
-  res.send("Users");
-});
+app.use(bodyParser.json());
 
-// ! get all element
-app.get("/users", (req, res) => {
-  res.send(arr);
-});
+// app.get("/", (req, res) => {
+//   res.send("Users");
+//   console.log("home page");
+// });
 
-
+app.use("/", UserRouter); //root
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
