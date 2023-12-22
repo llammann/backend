@@ -10,10 +10,10 @@ const UserRouter = require("./src/routers/UserRouter"); //root
 
 app.use(bodyParser.json());
 
-// app.get("/", (req, res) => {
-//   res.send("Users");
-//   console.log("home page");
-// });
+app.get("/", (req, res) => {
+  res.send("home page");
+  console.log("home page");
+});
 
 app.use("/", UserRouter); //root
 

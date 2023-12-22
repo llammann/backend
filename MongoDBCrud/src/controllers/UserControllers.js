@@ -29,8 +29,9 @@ const deleteUser = async (req, res) => {
 const getUserById = async (req, res) => {
   let Userid = req.params.id;
   let findUser = await User.findOne({ id: Userid });
-  
-  res.send("GET USER BY ID", findUser);
+  res.send(findUser);
+
+  console.log("GET USER BY ID")
 };
 
 // GET UPDATE USER
